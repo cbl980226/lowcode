@@ -1,8 +1,11 @@
 {
   "recommendations": [
+    "streetsidesoftware.code-spell-checker",
     "nrwl.angular-console",
     "esbenp.prettier-vscode",
-    "Vue.volar",
-    "Vue.vscode-typescript-vue-plugin"
+    "vue.volar",
+    "vue.vscode-typescript-vue-plugin",
+    "antfu.unocss",
+    "antfu.iconify"
   ]
 }

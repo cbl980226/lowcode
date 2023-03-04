@@ -4,7 +4,8 @@
     "vite.config.*",
     "vitest.config.*",
     "cypress.config.*",
-    "playwright.config.*"
+    "playwright.config.*",
+    "unocss.config.*"
   ],
   "compilerOptions": {
     "composite": true,
