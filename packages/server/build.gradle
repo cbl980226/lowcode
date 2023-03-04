@@ -1,0 +1,43 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.0.4'
+    id 'io.spring.dependency-management' version '1.1.0'
+}
+
+group = 'com.cbl980226'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '17'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    // https://springdoc.org/v2/
+    // https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-starter-webmvc-ui
+    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.0.2'
+
+    // https://springdoc.org/v2/
+    // https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-starter-webmvc-api
+    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-api:2.0.2'
+
+    // http://mybatis.org/spring-boot-starter/mybatis-spring-boot-autoconfigure/
+    // https://mvnrepository.com/artifact/org.mybatis.spring.boot/mybatis-spring-boot-starter
+    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.1'
+
+    // https://dev.mysql.com/doc/connector-j/8.0/en/
+    // https://mvnrepository.com/artifact/com.mysql/mysql-connector-j
+    implementation 'com.mysql:mysql-connector-j:8.0.32'
+
+    // https://github.com/alibaba/druid/wiki/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98
+    // https://mvnrepository.com/artifact/com.alibaba/druid-spring-boot-starter
+    implementation 'com.alibaba:druid-spring-boot-starter:1.2.15'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
