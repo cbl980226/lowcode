@@ -4,6 +4,7 @@
   "license": "MIT",
   "scripts": {
     "prepare": "husky install",
+    "postinstall": "npx playwright install",
     "commit": "git-cz",
     "release": "standard-version"
   },
