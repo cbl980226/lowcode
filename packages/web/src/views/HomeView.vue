@@ -1,5 +1,7 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import VisualEditor from '@/components/VisualEditor.vue'
+</script>
 
 <template>
-  <main border="t border" p-4 bg-primary>Hello world!</main>
+  <VisualEditor />
 </template>

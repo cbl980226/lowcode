@@ -1,4 +1,5 @@
 import '@unocss/reset/tailwind.css'
+import '@/assets/styles/main.css'
 import '@/assets/styles/vars.css'
 import 'uno.css'
 import 'virtual:unocss-devtools'
